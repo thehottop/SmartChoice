@@ -1,13 +1,17 @@
+
 const products = [
     {
         id: 1,
         name: "Samsung Galaxy S24",
         category: "smartphones",
         icon: "📱",
+        description: "Смартфон Samsung",
+        currency: "UAH",
+        updatedAt: "2026-11-20",
         offers: [
-            { shop: "Shop A", price: 28999 },
-            { shop: "Shop B", price: 27499 },
-            { shop: "Shop C", price: 29999 }
+            { shop: "Shop A", price: 28999, url: "" },
+            { shop: "Shop B", price: 27499, url: "" },
+            { shop: "Shop C", price: 29999, url: "" }
         ]
     },
     {
@@ -15,10 +19,13 @@ const products = [
         name: "iPhone 16",
         category: "smartphones",
         icon: "📱",
+        description: "Смартфон Apple",
+        currency: "UAH",
+        updatedAt: "2026-11-20",
         offers: [
-            { shop: "Shop A", price: 32999 },
-            { shop: "Shop B", price: 31999 },
-            { shop: "Shop C", price: 33999 }
+            { shop: "Shop A", price: 32999, url: "" },
+            { shop: "Shop B", price: 31999, url: "" },
+            { shop: "Shop C", price: 33999, url: "" }
         ]
     },
     {
@@ -26,10 +33,13 @@ const products = [
         name: "Xiaomi Redmi Note 14",
         category: "smartphones",
         icon: "📱",
+        description: "Смартфон Xiaomi",
+        currency: "UAH",
+        updatedAt: "2026-11-20",
         offers: [
-            { shop: "Shop A", price: 8999 },
-            { shop: "Shop B", price: 8499 },
-            { shop: "Shop C", price: 9299 }
+            { shop: "Shop A", price: 8999, url: "" },
+            { shop: "Shop B", price: 8499, url: "" },
+            { shop: "Shop C", price: 9299, url: "" }
         ]
     },
     {
@@ -37,10 +47,13 @@ const products = [
         name: "Игровой ноутбук",
         category: "computers",
         icon: "💻",
+        description: "Ноутбук для игр",
+        currency: "UAH",
+        updatedAt: "2026-11-20",
         offers: [
-            { shop: "Shop A", price: 35999 },
-            { shop: "Shop B", price: 34999 },
-            { shop: "Shop C", price: 37999 }
+            { shop: "Shop A", price: 35999, url: "" },
+            { shop: "Shop B", price: 34999, url: "" },
+            { shop: "Shop C", price: 37999, url: "" }
         ]
     },
     {
@@ -48,10 +61,13 @@ const products = [
         name: "Монитор 27 дюймов",
         category: "computers",
         icon: "🖥️",
+        description: "Компьютерный монитор",
+        currency: "UAH",
+        updatedAt: "2026-11-20",
         offers: [
-            { shop: "Shop A", price: 7999 },
-            { shop: "Shop B", price: 7499 },
-            { shop: "Shop C", price: 8299 }
+            { shop: "Shop A", price: 7999, url: "" },
+            { shop: "Shop B", price: 7499, url: "" },
+            { shop: "Shop C", price: 8299, url: "" }
         ]
     },
     {
@@ -59,10 +75,13 @@ const products = [
         name: "Sony WH-1000XM5",
         category: "accessories",
         icon: "🎧",
+        description: "Беспроводные наушники",
+        currency: "UAH",
+        updatedAt: "2026-11-20",
         offers: [
-            { shop: "Shop A", price: 13999 },
-            { shop: "Shop B", price: 12999 },
-            { shop: "Shop C", price: 14999 }
+            { shop: "Shop A", price: 13999, url: "" },
+            { shop: "Shop B", price: 12999, url: "" },
+            { shop: "Shop C", price: 14999, url: "" }
         ]
     },
     {
@@ -70,10 +89,13 @@ const products = [
         name: "Беспроводная мышь",
         category: "accessories",
         icon: "🖱️",
+        description: "Компьютерная мышь",
+        currency: "UAH",
+        updatedAt: "2026-11-20",
         offers: [
-            { shop: "Shop A", price: 899 },
-            { shop: "Shop B", price: 799 },
-            { shop: "Shop C", price: 999 }
+            { shop: "Shop A", price: 899, url: "" },
+            { shop: "Shop B", price: 799, url: "" },
+            { shop: "Shop C", price: 999, url: "" }
         ]
     },
     {
@@ -81,10 +103,13 @@ const products = [
         name: "Механическая клавиатура",
         category: "accessories",
         icon: "⌨️",
+        description: "Игровая клавиатура",
+        currency: "UAH",
+        updatedAt: "2026-11-20",
         offers: [
-            { shop: "Shop A", price: 2499 },
-            { shop: "Shop B", price: 2299 },
-            { shop: "Shop C", price: 2699 }
+            { shop: "Shop A", price: 2499, url: "" },
+            { shop: "Shop B", price: 2299, url: "" },
+            { shop: "Shop C", price: 2699, url: "" }
         ]
     },
     {
@@ -92,10 +117,13 @@ const products = [
         name: "Пылесос",
         category: "home",
         icon: "🧹",
+        description: "Пылесос для дома",
+        currency: "UAH",
+        updatedAt: "2026-11-20",
         offers: [
-            { shop: "Shop A", price: 4999 },
-            { shop: "Shop B", price: 4599 },
-            { shop: "Shop C", price: 5299 }
+            { shop: "Shop A", price: 4999, url: "" },
+            { shop: "Shop B", price: 4599, url: "" },
+            { shop: "Shop C", price: 5299, url: "" }
         ]
     },
     {
@@ -103,10 +131,13 @@ const products = [
         name: "Кофемашина",
         category: "home",
         icon: "☕",
+        description: "Кофемашина для дома",
+        currency: "UAH",
+        updatedAt: "2026-11-20",
         offers: [
-            { shop: "Shop A", price: 6999 },
-            { shop: "Shop B", price: 6499 },
-            { shop: "Shop C", price: 7299 }
+            { shop: "Shop A", price: 6999, url: "" },
+            { shop: "Shop B", price: 6499, url: "" },
+            { shop: "Shop C", price: 7299, url: "" }
         ]
     },
     {
@@ -114,10 +145,13 @@ const products = [
         name: "Настольная лампа",
         category: "home",
         icon: "💡",
+        description: "Лампа для рабочего стола",
+        currency: "UAH",
+        updatedAt: "2026-11-20",
         offers: [
-            { shop: "Shop A", price: 799 },
-            { shop: "Shop B", price: 699 },
-            { shop: "Shop C", price: 899 }
+            { shop: "Shop A", price: 799, url: "" },
+            { shop: "Shop B", price: 699, url: "" },
+            { shop: "Shop C", price: 899, url: "" }
         ]
     },
     {
@@ -125,10 +159,13 @@ const products = [
         name: "PlayStation 5",
         category: "games",
         icon: "🎮",
+        description: "Игровая консоль",
+        currency: "UAH",
+        updatedAt: "2026-11-20",
         offers: [
-            { shop: "Shop A", price: 22999 },
-            { shop: "Shop B", price: 21999 },
-            { shop: "Shop C", price: 23999 }
+            { shop: "Shop A", price: 22999, url: "" },
+            { shop: "Shop B", price: 21999, url: "" },
+            { shop: "Shop C", price: 23999, url: "" }
         ]
     },
     {
@@ -136,10 +173,13 @@ const products = [
         name: "Игровой контроллер",
         category: "games",
         icon: "🕹️",
+        description: "Контроллер для игр",
+        currency: "UAH",
+        updatedAt: "2026-11-20",
         offers: [
-            { shop: "Shop A", price: 2999 },
-            { shop: "Shop B", price: 2799 },
-            { shop: "Shop C", price: 3199 }
+            { shop: "Shop A", price: 2999, url: "" },
+            { shop: "Shop B", price: 2799, url: "" },
+            { shop: "Shop C", price: 3199, url: "" }
         ]
     },
     {
@@ -147,10 +187,13 @@ const products = [
         name: "Apple Watch",
         category: "gadgets",
         icon: "⌚",
+        description: "Умные часы Apple",
+        currency: "UAH",
+        updatedAt: "2026-11-20",
         offers: [
-            { shop: "Shop A", price: 11999 },
-            { shop: "Shop B", price: 10999 },
-            { shop: "Shop C", price: 12499 }
+            { shop: "Shop A", price: 11999, url: "" },
+            { shop: "Shop B", price: 10999, url: "" },
+            { shop: "Shop C", price: 12499, url: "" }
         ]
     },
     {
@@ -158,10 +201,13 @@ const products = [
         name: "Фитнес-браслет",
         category: "gadgets",
         icon: "⌚",
+        description: "Фитнес-браслет",
+        currency: "UAH",
+        updatedAt: "2026-11-20",
         offers: [
-            { shop: "Shop A", price: 1499 },
-            { shop: "Shop B", price: 1299 },
-            { shop: "Shop C", price: 1699 }
+            { shop: "Shop A", price: 1499, url: "" },
+            { shop: "Shop B", price: 1299, url: "" },
+            { shop: "Shop C", price: 1699, url: "" }
         ]
     }
 ];
@@ -173,16 +219,13 @@ const catalogTitle = document.getElementById("catalogTitle");
 const productsCount = document.getElementById("productsCount");
 const modal = document.getElementById("compareModal");
 
-let currentCategory = "all";
-
 function renderProducts(list) {
     results.innerHTML = "";
-
     productsCount.textContent = "Товаров: " + list.length;
 
     if (list.length === 0) {
         results.innerHTML =
-            '<p class="no-results">Товары не найдены. Попробуй другой запрос.</p>';
+            '<p class="no-results">Товары не найдены.</p>';
         return;
     }
 
@@ -190,30 +233,31 @@ function renderProducts(list) {
         const card = document.createElement("div");
         card.className = "product-card";
 
-        const icon = document.createElement("div");
-        icon.className = "product-icon";
-        icon.textContent = product.icon;
+        const cheapest = Math.min(
+            ...product.offers.map(offer => offer.price)
+        );
 
-        const name = document.createElement("h3");
-        name.textContent = product.name;
+        card.innerHTML = `
+            <div class="product-icon">${product.icon}</div>
+            <h3></h3>
+            <p></p>
+            <p>От ${cheapest.toLocaleString("uk-UA")} ₴</p>
+            <button class="compare-button">Сравнить цены</button>
+        `;
 
-        const description = document.createElement("p");
-        description.textContent = "Предложения от 3 магазинов";
+        card.querySelector("h3").textContent = product.name;
+        card.querySelectorAll("p")[0].textContent = product.description;
 
-        const button = document.createElement("button");
-        button.className = "compare-button";
-        button.textContent = "Сравнить цены";
-        button.addEventListener("click", () => openCompare(product.id));
+        card.querySelector("button").addEventListener("click", () => {
+            openCompare(product.id);
+        });
 
-        card.append(icon, name, description, button);
         results.appendChild(card);
     });
 }
 
 function showCategory(category) {
-    currentCategory = category;
-
-    const categoryNames = {
+    const names = {
         all: "Все товары",
         smartphones: "Смартфоны",
         computers: "Компьютеры",
@@ -223,7 +267,7 @@ function showCategory(category) {
         gadgets: "Гаджеты"
     };
 
-    catalogTitle.textContent = categoryNames[category];
+    catalogTitle.textContent = names[category];
 
     document.querySelectorAll(".category").forEach(button => {
         button.classList.toggle(
@@ -236,7 +280,7 @@ function showCategory(category) {
 
     const filtered = category === "all"
         ? products
-        : products.filter(product => product.category === category);
+        : products.filter(item => item.category === category);
 
     renderProducts(filtered);
 }
@@ -245,18 +289,17 @@ function searchProduct() {
     const query = searchInput.value.trim().toLowerCase();
 
     const filtered = products.filter(product =>
-        product.name.toLowerCase().includes(query)
+        (product.name + " " + product.description)
+            .toLowerCase()
+            .includes(query)
     );
 
-    catalogTitle.textContent = query
-        ? "Результаты поиска"
-        : "Все товары";
+    catalogTitle.textContent = "Результаты поиска";
 
     document.querySelectorAll(".category").forEach(button => {
         button.classList.remove("active");
     });
 
-    currentCategory = "all";
     renderProducts(filtered);
 }
 
@@ -270,11 +313,11 @@ function openCompare(productId) {
     const priceResults = document.getElementById("priceResults");
     priceResults.innerHTML = "";
 
-    const sortedOffers = [...product.offers].sort(
+    const sorted = [...product.offers].sort(
         (a, b) => a.price - b.price
     );
 
-    sortedOffers.forEach(offer => {
+    sorted.forEach(offer => {
         const row = document.createElement("div");
         row.className = "price-row";
 
@@ -282,9 +325,21 @@ function openCompare(productId) {
         shop.textContent = offer.shop;
 
         const price = document.createElement("strong");
-        price.textContent = offer.price.toLocaleString("uk-UA") + " ₴";
+        price.textContent =
+            offer.price.toLocaleString("uk-UA") + " ₴";
 
         row.append(shop, price);
+
+        if (offer.url) {
+            const link = document.createElement("a");
+            link.href = offer.url;
+            link.target = "_blank";
+            link.rel = "noopener noreferrer";
+            link.textContent = "Перейти";
+            link.style.color = "#3985ff";
+            row.appendChild(link);
+        }
+
         priceResults.appendChild(row);
     });
 
@@ -309,7 +364,10 @@ searchInput.addEventListener("keydown", event => {
     }
 });
 
-document.getElementById("closeModal").addEventListener("click", closeCompare);
+document.getElementById("closeModal").addEventListener(
+    "click",
+    closeCompare
+);
 
 modal.addEventListener("click", event => {
     if (event.target === modal) {
