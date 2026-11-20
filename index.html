@@ -1,92 +1,67 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SmartChoice</title>
+    <title>SmartChoice — умный выбор</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1>SmartChoice</h1>
-    <p>Найди лучшее предложение среди магазинов</p>
+<header class="header">
+    <div class="logo">Smart<span>Choice</span></div>
+    <p>Находи лучшее. Сравнивай цены. Выбирай умно.</p>
 </header>
 
-<main>
+<main class="container">
+
     <section class="search-section">
-        <h2>Найди свой товар</h2>
+        <h1>Найди лучший товар</h1>
+        <p>Сравни цены и выбери выгодное предложение</p>
 
         <div class="search-box">
-            <input
-                id="searchInput"
-                type="text"
-                placeholder="Например, Samsung Galaxy S24..."
-            >
-            <button onclick="searchProduct()">Найти</button>
+            <input type="text" id="searchInput"
+                   placeholder="Например, Samsung Galaxy S24...">
+            <button id="searchButton">Найти</button>
         </div>
-
-        <div id="searchResults"></div>
     </section>
 
-    <section class="categories">
+    <section class="categories-section">
         <h2>Категории</h2>
-        <div class="category-grid">
-            <div class="category">📱 Смартфоны</div>
-            <div class="category">💻 Компьютеры</div>
-            <div class="category">🎧 Аксессуары</div>
-            <div class="category">🏠 Для дома</div>
-            <div class="category">🎮 Игры</div>
-            <div class="category">⌚ Гаджеты</div>
+
+        <div class="categories">
+            <button class="category active" data-category="all">🌐 Все товары</button>
+            <button class="category" data-category="smartphones">📱 Смартфоны</button>
+            <button class="category" data-category="computers">💻 Компьютеры</button>
+            <button class="category" data-category="accessories">🎧 Аксессуары</button>
+            <button class="category" data-category="home">🏠 Для дома</button>
+            <button class="category" data-category="games">🎮 Игры</button>
+            <button class="category" data-category="gadgets">⌚ Гаджеты</button>
         </div>
     </section>
 
     <section class="products-section">
-        <h2>Популярные товары</h2>
-
-        <div class="product-grid">
-            <article class="product-card">
-                <div class="product-icon">📱</div>
-                <h3>Samsung Galaxy S24</h3>
-                <p>Современный смартфон Samsung.</p>
-                <button onclick="openCompare('Samsung Galaxy S24')">
-                    Сравнить цены
-                </button>
-            </article>
-
-            <article class="product-card">
-                <div class="product-icon">🎧</div>
-                <h3>Sony WH-1000XM5</h3>
-                <p>Беспроводные наушники Sony.</p>
-                <button onclick="openCompare('Sony WH-1000XM5')">
-                    Сравнить цены
-                </button>
-            </article>
-
-            <article class="product-card">
-                <div class="product-icon">⌚</div>
-                <h3>Apple Watch</h3>
-                <p>Умные часы Apple.</p>
-                <button onclick="openCompare('Apple Watch')">
-                    Сравнить цены
-                </button>
-            </article>
+        <div class="section-heading">
+            <h2 id="catalogTitle">Все товары</h2>
+            <span id="productsCount"></span>
         </div>
+
+        <div id="searchResults" class="products-grid"></div>
     </section>
+
 </main>
 
 <div id="compareModal" class="modal">
     <div class="modal-content">
-        <button class="close-button" onclick="closeCompare()">✕</button>
+        <button class="close-button" id="closeModal">×</button>
         <h2 id="modalTitle">Сравнение цен</h2>
         <div id="priceResults"></div>
-        <p class="demo-note">Демонстрационные цены, не реальные предложения магазинов.</p>
+        <p class="demo-note">Демонстрационные цены — не реальные предложения магазинов.</p>
     </div>
 </div>
 
 <footer>
-    <p>© 2026 SmartChoice. Все права защищены.</p>
+    <p>© 2026 SmartChoice. Умный выбор начинается здесь.</p>
 </footer>
 
 <script src="script.js"></script>
